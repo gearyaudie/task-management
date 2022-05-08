@@ -1,0 +1,38 @@
+.root {
+  position: relative;
+  width: 425px;
+}
+
+.input-style {
+  width: 100%;
+}
+
+.table-width {
+  width: 100%;
+  margin-top: 25px;
+}
+
+td {
+  padding-right: 15px;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  position: absolute;
+  right: -10px;
+  top: -30px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.add-task-btn {
+  background: #e8f1f0;
+  color: #2c9985;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}

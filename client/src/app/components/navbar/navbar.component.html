@@ -1,0 +1,28 @@
+<div class="bg">
+  <div class="container">
+    <a
+      routerLink="/"
+      style="cursor: pointer; text-decoration: none; color: #212121"
+    >
+      <p class="title">.cow-app</p>
+    </a>
+    <div>
+      <button
+        type="button"
+        (click)="openDialog()"
+        mat-flat-button
+        class="add-task-btn"
+      >
+        Add Task
+      </button>
+      <button
+        type="button"
+        (click)="handleLogout()"
+        class="logout-btn"
+        mat-stroked-button
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>

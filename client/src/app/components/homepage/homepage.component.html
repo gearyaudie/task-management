@@ -1,0 +1,20 @@
+<app-navbar (onAddTask)="postTask($event)"></app-navbar>
+<div class="container-all">
+  <div class="txt-container">
+    <p class="welcome-txt">Welcome back, {{ username }}</p>
+  </div>
+  <div class="container">
+    <!-- <app-task-card
+      [taskPriority]="backlogTask"
+      [name]="'Backlog'"
+    ></app-task-card> -->
+
+    <app-task-card [taskPriority]="lowTask" [name]="'Low'"></app-task-card>
+
+    <app-task-card
+      [taskPriority]="mediumTask"
+      [name]="'Medium'"
+    ></app-task-card>
+    <app-task-card [taskPriority]="highTask" [name]="'High'"></app-task-card>
+  </div>
+</div>

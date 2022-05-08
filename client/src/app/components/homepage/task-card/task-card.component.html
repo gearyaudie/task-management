@@ -1,0 +1,20 @@
+<div class="inner-container">
+  <p class="title">
+    {{ name }}
+  </p>
+  <div class="scroller">
+    <mat-card *ngFor="let task of taskPriority" class="card">
+      <p class="card-title" (click)="onCardClick(task.id)">
+        {{ task.title }}
+      </p>
+      <p class="card-description">
+        {{ task.description | slice: 0:55
+        }}{{ task.description.length > 55 ? "..." : "" }}
+      </p>
+      <p class="card-status">
+        {{ task.status }}
+      </p>
+    </mat-card>
+    <p *ngIf="taskPriority == ''">No backlog tasks</p>
+  </div>
+</div>

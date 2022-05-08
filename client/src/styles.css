@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+body {
+  background: #fbfbfb;
+}
+
+.created-snackbar {
+  color: #2c9985;
+  background: #fff;
+}
+
+.deleted-snackbar {
+  color: #ec7063;
+  background: #fff;
+}
+
+.edited-snackbar {
+  color: #0091ff;
+  background: #fff;
+}

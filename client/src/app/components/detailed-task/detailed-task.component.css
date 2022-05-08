@@ -1,0 +1,33 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  margin: 50px 25px;
+  padding: 50px 35px;
+  width: 1000px;
+  height: 500px;
+}
+
+.input-style {
+  width: 100%;
+}
+
+.description {
+  margin-top: 25px;
+}
+
+.back-btn-container {
+  margin-right: 10px;
+}
+
+.update-btn-container {
+  margin-right: 10px;
+}
+
+.delete-btn-container {
+  margin-top: 40px;
+}

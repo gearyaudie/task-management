@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+<div class="center">
+  <div class="container">
+    <!-- <h2>{{ task.title }}</h2> -->
+    <form (ngSubmit)="onSubmitEditTask()" class="table-width">
+      <mat-form-field class="input-style" appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput name="title" [(ngModel)]="task.title" />
+      </mat-form-field>
+      <mat-form-field class="input-style" appearance="outline">
+        <mat-label>Desecription</mat-label>
+        <textarea matInput name="description" [(ngModel)]="task.description">
+        </textarea>
+      </mat-form-field>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Priority</mat-label>
+          <mat-select [(value)]="task.priority">
+            <mat-option>None</mat-option>
+            <mat-optgroup label="Priority">
+              <mat-option value="Backlog">Backlog</mat-option>
+              <mat-option value="Low">Low</mat-option>
+              <mat-option value="Medium">Medium</mat-option>
+              <mat-option value="High">High</mat-option>
+            </mat-optgroup>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Status</mat-label>
+          <mat-select [(value)]="task.status">
+            <mat-option>None</mat-option>
+            <mat-optgroup label="Status">
+              <mat-option value="In Progress">In Progress</mat-option>
+              <mat-option value="Review">Review</mat-option>
+              <mat-option value="Done">Done</mat-option>
+            </mat-optgroup>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <button
+        mat-stroked-button
+        type="button"
+        class="back-btn-container"
+        (click)="onBackBtnClick()"
+      >
+        <mat-icon>arrow_back</mat-icon>
+        Back
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        class="update-btn-container"
+        type="submit"
+      >
+        <mat-icon aria-label="update icon">update</mat-icon>
+        Update
+      </button>
+
+      <button
+        mat-flat-button
+        type="button"
+        color="warn"
+        class="delete-btn-container"
+        (click)="onDelete(task)"
+      >
+        <mat-icon aria-label="delete icon">delete</mat-icon>
+        Delete
+      </button>
+    </form>
+  </div>
+</div>
